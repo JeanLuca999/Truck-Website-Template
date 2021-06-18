@@ -6,101 +6,167 @@
 
 html {
     font-size: 10px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans",sans-serif;
+    overflow-x: hidden;
 }
 
 .header {
-    width: 100%;
-    height: 50px;
-    padding: 0 20px;
-    margin-top: 10px;
-    background-color: white;
+    width: 100vw;
+    height: 70px;
+    background-color: #fff;
 }
 
-.header-nav {
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 200px;
-    height: 100vh;
-    background-color: #000000ec;
-    transition: 0.3s ease;
-}
-
-.header-nav-open {
-    left: 0%;
-}
-
-.header-nav-ul {
+.header--menu {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 50px;
+    height: 50px;
+
+    margin-left: auto;
+    margin-right: 20px;
 }
 
-.header-nav-ul-li {
-    display: block;
-    width: 100px;
-    margin: 10px 0;
+.header--menu--bar {
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    margin-bottom: 4px;
+    border-radius: 5px;
 }
 
-.header-nav-ul-li:first-child {
-    margin-top: 60px;
+.header nav {
+    top: 0;
+    left: -100%;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    max-width: 250px;
+    background-color: #000000d0;
+
+    transition: 0.4s ease;
 }
 
-.header-nav-ul-li a {
+.menu-active {
+    left: 0% !important;
+}
+
+.header nav ul li {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.header nav ul li:first-child {
+    margin-top: 50px;
+}
+
+.header nav ul li a {
     font-size: 1.6rem;
     color: white;
     text-decoration: none;
 }
 
-.header-menu {
+.main {
+    width: 100vw;
+}
+
+.main--banner {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    width: 40px;
-    height: 40px;
-    background-color: #ffffff;
-    margin-left: auto;
-}
-
-.header-menu-bar {
-    width: 30px;
-    height: 3px;
-    margin-bottom: 5px;
-    background-color: black;
-    border-radius: 5px;
-}
-
-.main-banner {
-    background-image: url('../images/truck-banner.jpeg');
-    background-size: 100%;
-    background-repeat: no-repeat;
+    width: 100%;
+    height: 70vh;
     background-position: center;
-    width: 100vw;
-    height: 40vh;
-    max-height: 500px;
+    background-size: cover;
+    background-image: url('../images/truck-banner.jpeg');
 }
 
-.main-banner h1 {
-    text-shadow: 0px 0px 4px black;
-    font-family: 'Oswald', sans-serif;
+.main--banner h1 {
+    font-family: "Oswald", sans-serif;
+    font-size: 4.5rem;
+    line-height: 40px;
+    color: #fff;
     max-width: 300px;
-    font-size: 4rem;
-    color: white;
-    font-weight: bold;
-    margin-left: auto;
-    margin-right: 30vw;
+    margin: 0 auto;
+    text-shadow: 0px 1px 2px #000;
+    margin-bottom: 10px;
 }
 
-.main-banner h2 {
-    text-shadow: 0px 1px 4px black;
-    font-family: 'Oswald', sans-serif;
+.main--banner h2 {
+    font-size: 1.8rem;
+    color: #fff;
     max-width: 300px;
-    font-size: 2.5rem;
-    color: white;
+    margin: 0 auto;
+    text-shadow: 0px 1px 2px #000;
+}
+
+.main--truck01 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.main--truck-wrapper {
+    background-image: url('../images/red-wallpaper.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.main--truck01 h3 {
+    font-size: 1.8rem;
     font-weight: 400;
-    margin-left: auto;
-    margin-right: 30vw;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.main--truck01 h2 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+    color: white;
+}
+
+.main--truck01 p {
+    font-size: 1.6rem;
+    color: white;
+    max-width: 300px;
+    text-align: left;
+    margin: 20px 0;
+}
+
+.main--truck01 button {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    width: 150px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.main--truck01 figure {
+    display: block;
+    width: 100%;
+}
+
+.main--truck01 figure img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+}
+
+
+@media screen and (min-width:700px) {
+    .main--truck01 {
+        flex-direction: row;
+    }
+    .main--truck-wrapper {
+        max-height: 500px;
+    }
 }

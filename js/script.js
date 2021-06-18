@@ -1,6 +1,5 @@
-const navMenu = document.querySelectorAll('.header-nav')[0]
-const menu = document.querySelectorAll('.header-menu')[0]
-
+const menu = document.querySelector('.header--menu')
+const navMenu = document.querySelector('#navMenu')
 menu.addEventListener('click', () => {
-    navMenu.classList.toggle('header-nav-open')
+    navMenu.classList.toggle('menu-active')
 })
