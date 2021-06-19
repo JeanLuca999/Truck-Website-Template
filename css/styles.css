@@ -226,6 +226,47 @@ html {
     padding-right: 10px;
 }
 
+.main--grid-section h2 {
+    font-family: "Oswald", sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+    color: #A81C1D;
+
+    background-color: #e5e5e5;
+    padding: 20px 0;
+}
+
+.main--grid-section--grid-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    background-color: #e5e5e5;
+}
+
+.main--grid-section--grid-container .truck-card {
+    min-height: 300px;
+    background-color: #fff;
+    margin: 10px;
+}
+
+.truck-card img {
+    width: 100%;
+}
+
+.truck-card h3 {
+    font-family: "Oswald", sans-serif;
+    font-weight: lighter;
+    font-size: 1.8rem;
+    text-align: left;
+    padding-top: 25px;
+    padding-left: 20px;
+}
+
 @media screen and (min-width:700px) {
     .main--truck01 {
         flex-direction: row;
@@ -244,5 +285,9 @@ html {
         flex-direction: row;
         justify-content: center;
         align-items: baseline;
+    }
+
+    .main--grid-section--grid-container {
+        flex-direction: row;
     }
 }
