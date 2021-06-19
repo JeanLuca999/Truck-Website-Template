@@ -161,6 +161,59 @@ html {
     object-fit: contain;
 }
 
+.main--truck-models {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+}
+
+.main--truck-models div {
+    max-width: 400px;
+    padding-top: 20px;
+}
+
+.main--truck-models h2 {
+    font-family: "Oswald", sans-serif;
+    font-size: 3.5rem;
+    font-weight: 400;
+    color: #A81C1D;
+}
+
+.main--truck-models p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-style: italic;
+    text-align: left;
+    line-height: 25px;
+    color: #818181;
+    margin: 5px 0;
+    margin-right: 15px;
+    max-width: 400px;
+}
+
+.main--truck-models figure {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.main--truck-models figure img {
+    padding: 10px;
+    width: 100%;
+    max-width: 350px;
+    object-fit: contain;
+}
+
+.main--truck-models button {
+    color: #ffffff;
+    background-color: #A81C1D;
+
+    width: 150px;
+    height: 40px;
+    border: 0px;
+}
+
 
 @media screen and (min-width:700px) {
     .main--truck01 {
@@ -168,5 +221,13 @@ html {
     }
     .main--truck-wrapper {
         max-height: 500px;
+    }
+}
+
+@media screen and (min-width:800px) {
+    .main--truck-models {
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;
     }
 }
