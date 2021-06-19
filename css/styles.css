@@ -86,7 +86,7 @@ html {
 .main--banner h1 {
     font-family: "Oswald", sans-serif;
     font-size: 4.5rem;
-    line-height: 40px;
+    line-height: 45px;
     color: #fff;
     max-width: 300px;
     margin: 0 auto;
@@ -167,6 +167,7 @@ html {
     justify-content: center;
     align-items: center;
     background-color: #f2f2f2;
+    padding-bottom: 20px;
 }
 
 .main--truck-models div {
@@ -214,6 +215,16 @@ html {
     border: 0px;
 }
 
+/*
+    modificações especiais para o wallpaper do segundo caminhão
+*/
+.black-wallpaper {
+    background-image: url('../images/black-wallpaper.png');
+    background-position: center;
+    background-size: cover;
+    margin-left: auto;
+    padding-right: 10px;
+}
 
 @media screen and (min-width:700px) {
     .main--truck01 {
@@ -221,6 +232,10 @@ html {
     }
     .main--truck-wrapper {
         max-height: 500px;
+    }
+
+    .black-wallpaper {
+        padding-left: 30%;
     }
 }
 
